@@ -1,0 +1,47 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "AppCollision2D",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceRoot}/",
+            "program": "${workspaceFolder}/cpp_project/build/Debug/appCollision2D",
+            "stopAtEntry": false, 
+            "preLaunchTask": "build",
+            "launchCompleteCommand": "exec-run",
+            "MIMode": "lldb",
+            "targetArchitecture": "arm64"
+           
+        },
+        {
+            "name": "TestGelEngine",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/cpp_project/build/libGelEngine/test/testGelEngine",
+            "stopAtEntry": false, 
+            "preLaunchTask": "testGelEngine",
+            "launchCompleteCommand": "exec-run",
+            "MIMode": "lldb",
+            "targetArchitecture": "arm64",
+            "cwd": "${workspaceRoot}/"
+        },
+        {
+            "name": "TestRenderEngine",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/cpp_project/build/libGelRenderIO/test/testGelRender",
+            "stopAtEntry": false, 
+            "preLaunchTask": "testRenderIO",
+            "launchCompleteCommand": "exec-run",
+            "MIMode": "lldb",
+            "targetArchitecture": "arm64",
+            "cwd": "${workspaceRoot}/"
+        },
+    ]
+}
+
+ 
