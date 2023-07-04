@@ -20,7 +20,7 @@ target_link_libraries(testGelRender
  PRIVATE
     GTest::gtest_main
     GelEngine
-    GelRenderIO
+    GelRenderIOlib
 
   )
 

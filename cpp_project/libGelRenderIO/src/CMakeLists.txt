@@ -9,7 +9,7 @@ foreach (_headerFile ${libGelRenderIO_HEADERS})
 endforeach()
  
 list(REMOVE_DUPLICATES libGelRenderIO_INCLUDE_DIRS)
-
+add_executable(GelRenderIOExec ${libGelRenderIO_SOURCES} ${libGelRenderIO_HEADERS}  ${OPENGL_LIBRARIES}    )
 add_library(GelRenderIO ${libGelRenderIO_SOURCES} ${libGelRenderIO_HEADERS}  ${OPENGL_LIBRARIES}    )
 target_include_directories(GelRenderIO PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/")
 set_target_properties(GelRenderIO PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${INSTALLATION_PATH}/)
@@ -23,3 +23,4 @@ set(libGelRenderIO_TARGET_LIBRARIES
     glad
     )
 target_link_libraries(GelRenderIO ${libGelRenderIO_TARGET_LIBRARIES}   ${OPENGL_LIBRARIES})
+target_link_libraries(GelRenderIOExec ${libGelRenderIO_TARGET_LIBRARIES}   ${OPENGL_LIBRARIES})

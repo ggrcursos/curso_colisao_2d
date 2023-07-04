@@ -41,7 +41,22 @@
             "targetArchitecture": "arm64",
             "cwd": "${workspaceRoot}/"
         },
+
+        {
+            "name": "TestAppEngine",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/cpp_project/build/libGelRenderIO/src/GelRenderIOExec",
+            "stopAtEntry": false, 
+            "preLaunchTask": "testRenderIO",
+            "launchCompleteCommand": "exec-run",
+            "MIMode": "lldb",
+            "targetArchitecture": "arm64",
+            "cwd": "${workspaceRoot}/"
+        },
     ]
 }
+
+
 
  
